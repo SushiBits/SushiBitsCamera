@@ -16,6 +16,15 @@ This camera currently uses the [Raspberry Pi camera module, v1 and v2][PiCam],
 although any camera that uses the same Raspberry Pi protocol and pinout should
 work with appropriate drivers.
 
+## Features
+
+*   Up to 8MP camera (if you are using the Raspberry Pi camera module, you can
+    use any MPIP CSI image sensor as long as you have the drivers for it.)
+*   microSD card for image storage.
+*   Connectivity options: wired Ethernet, 802.11b/g/n Wi-Fi and Bluetooth 4.0.
+*   Display: 4.3in 800x480 LCD, resistive touchscreen.
+*   Fully open source: hardware and software.
+
 ## Components
 
 The primary components for this project includes:
