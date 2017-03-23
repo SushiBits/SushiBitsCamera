@@ -37,7 +37,7 @@ The primary components for this project includes:
 *   Realtek RTL8723BS: 802.11b/g/n SDIO Wi-Fi and Bluetooth module.
 *   microSD card slot. The card can be used for storing pictures, or booting the
     camera with custom U-Boot, kernel and root filesystem.
-*   Forlinx 4.3in LCD with resistive touch.
+*   [Forlinx 4.3in LCD with resistive touch][LCD].
 *   [XPTEK XPT2046][XPT2046]: Resistive touchscreen controller.
 *   [NXP SC18IS602B][SC18IS602B]: I2C to SPI bridge (since I ran out of GPIO on
     the processor, and I need one SPI port for the touchscreen controller.)
@@ -55,3 +55,4 @@ This is [open source hardware](http://www.oshwa.org/), licensed under the
 [XPT2046]: http://www.buydisplay.com/download/ic/XPT2046.pdf
 [SC18IS602B]: http://www.nxp.com/documents/data_sheet/SC18IS602B.pdf
 [OV5640]: https://cdn.sparkfun.com/datasheets/Sensors/LightImaging/OV5640_datasheet.pdf
+[LCD]: http://www.forlinx.net/products_detail/productId=54.html
