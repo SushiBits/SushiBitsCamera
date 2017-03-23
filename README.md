@@ -13,15 +13,16 @@ package, with 64MB DDR2 memory built in. This is definitely a win for this
 project, as I can solder this package without an oven.
 
 This camera currently uses the [Raspberry Pi camera module, v1 and v2][PiCam],
-although any camera that uses the same Raspberry Pi protocol and pinout should
-work with appropriate drivers.
+although any camera that uses the same MIPI CSI protocol and pinout should work
+with appropriate drivers.
 
 ## Features
 
 *   Up to 8MP camera (if you are using the Raspberry Pi camera module, you can
     use any MPIP CSI image sensor as long as you have the drivers for it.)
 *   microSD card for image storage.
-*   Connectivity options: wired Ethernet, 802.11b/g/n Wi-Fi and Bluetooth 4.0.
+*   Connectivity options: wired Ethernet, 802.11b/g/n Wi-Fi and Bluetooth 4.0,
+    USB 2.0 OTG, and a UART in another USB.
 *   Display: 4.3in 800x480 LCD, resistive touchscreen.
 *   Fully open source: hardware and software.
 
@@ -41,10 +42,12 @@ The primary components for this project includes:
 *   Forlinx 4.3in LCD with resistive touch.
 *   [XPTEK XPT2046][XPT2046]: Resistive touchscreen controller.
 *   [NXP SC18IS602B][SC18IS602B]: I2C to SPI bridge (since I ran out of GPIO on
-    the processor, and I need one SPI port for the touchscreen controller.
+    the processor, and I need one SPI port for the touchscreen controller.)
 
 [PiCam]: https://www.raspberrypi.org/products/camera-module-v2/
 [V3s]: http://linux-sunxi.org/V3s
 [25128]: https://www.winbond.com/resource-files/w25q128fv%20rev.l%2008242015.pdf
 [XPT2046]: http://www.buydisplay.com/download/ic/XPT2046.pdf
 [SC18IS602B]: http://www.nxp.com/documents/data_sheet/SC18IS602B.pdf
+
+
