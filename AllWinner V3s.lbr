@@ -1064,116 +1064,116 @@ shrink quad flat pack, square</description>
 </deviceset>
 <deviceset name="V3S" prefix="IC">
 <gates>
-<gate name="G$1" symbol="V3S-POWER" x="-68.58" y="15.24"/>
-<gate name="G$2" symbol="V3S-PORTB" x="-25.4" y="17.78"/>
-<gate name="G$3" symbol="V3S-PORTE" x="45.72" y="15.24"/>
-<gate name="G$4" symbol="V3S-PORTF" x="-22.86" y="-27.94"/>
-<gate name="G$5" symbol="V3S-USB" x="25.4" y="-27.94"/>
-<gate name="G$6" symbol="V3S-AUDIO" x="-66.04" y="-33.02"/>
+<gate name="-POWER" symbol="V3S-POWER" x="-68.58" y="15.24" addlevel="must"/>
+<gate name="-PORTBC" symbol="V3S-PORTB" x="-25.4" y="17.78" addlevel="always"/>
+<gate name="-PORTE" symbol="V3S-PORTE" x="45.72" y="15.24" addlevel="always"/>
+<gate name="-PORTFG" symbol="V3S-PORTF" x="-22.86" y="-27.94" addlevel="always"/>
+<gate name="-MISC" symbol="V3S-USB" x="25.4" y="-27.94" addlevel="always"/>
+<gate name="-AUDIO" symbol="V3S-AUDIO" x="-66.04" y="-33.02" addlevel="always"/>
 </gates>
 <devices>
 <device name="H" package="ELQFP128-H">
 <connects>
-<connect gate="G$1" pin="!RESET" pad="99"/>
-<connect gate="G$1" pin="AGND" pad="116"/>
-<connect gate="G$1" pin="AVCC" pad="115"/>
-<connect gate="G$1" pin="AVDDP" pad="122"/>
-<connect gate="G$1" pin="AVDDPO" pad="123"/>
-<connect gate="G$1" pin="GND" pad="P"/>
-<connect gate="G$1" pin="RTCI" pad="96"/>
-<connect gate="G$1" pin="RTCO" pad="95"/>
-<connect gate="G$1" pin="RTCVIO" pad="97"/>
-<connect gate="G$1" pin="SVREF" pad="63 71"/>
-<connect gate="G$1" pin="SZQ" pad="73"/>
-<connect gate="G$1" pin="VBACKUP" pad="98"/>
-<connect gate="G$1" pin="VCCETH" pad="93"/>
-<connect gate="G$1" pin="VCORE" pad="20 21 25 26 38 47 51 56"/>
-<connect gate="G$1" pin="VDDCSI" pad="85"/>
-<connect gate="G$1" pin="VDDETH" pad="88"/>
-<connect gate="G$1" pin="VDDIO" pad="50 57 104 127"/>
-<connect gate="G$1" pin="VDDIOE" pad="12 29"/>
-<connect gate="G$1" pin="VDDPLL" pad="76"/>
-<connect gate="G$1" pin="VDDRAM" pad="59 60 61 62 65 66 67 68 69 70 72 79"/>
-<connect gate="G$1" pin="VDDSYS" pad="19 58 64 80 108 126"/>
-<connect gate="G$1" pin="VDDUSB" pad="109"/>
-<connect gate="G$1" pin="XI" pad="75"/>
-<connect gate="G$1" pin="XO" pad="74"/>
-<connect gate="G$2" pin="PB0/TX2" pad="39"/>
-<connect gate="G$2" pin="PB1/RX2" pad="40"/>
-<connect gate="G$2" pin="PB2/RTS2" pad="41"/>
-<connect gate="G$2" pin="PB3/CTS2" pad="42"/>
-<connect gate="G$2" pin="PB4/PWM0" pad="43"/>
-<connect gate="G$2" pin="PB5/PWM1" pad="44"/>
-<connect gate="G$2" pin="PB6/SCL0" pad="45"/>
-<connect gate="G$2" pin="PB7/SDA0" pad="46"/>
-<connect gate="G$2" pin="PB8/SCL1/TX0" pad="48"/>
-<connect gate="G$2" pin="PB9/SDA1/RX0" pad="49"/>
-<connect gate="G$2" pin="PC0/SD2_CLK/MISO0" pad="52"/>
-<connect gate="G$2" pin="PC1/SD2_CMD/SCK0" pad="53"/>
-<connect gate="G$2" pin="PC2/SD2_RST/SPICS0" pad="54"/>
-<connect gate="G$2" pin="PC3/SD2_D0/MOSI0" pad="55"/>
-<connect gate="G$3" pin="PE0/CSI_PCLK/LCD_CLK" pad="37"/>
-<connect gate="G$3" pin="PE1/CSI_MCLK/LCD_ME" pad="36"/>
-<connect gate="G$3" pin="PE10/CSI_D6/LCD_D10" pad="24"/>
-<connect gate="G$3" pin="PE11/CSI_D7/LCD_D11" pad="23"/>
-<connect gate="G$3" pin="PE12/CSI_D8/LCD_D12" pad="22"/>
-<connect gate="G$3" pin="PE13/CSI_D9/LCD_D13" pad="18"/>
-<connect gate="G$3" pin="PE14/CSI_D10/LCD_D14" pad="17"/>
-<connect gate="G$3" pin="PE15/CSI_D11/LCD_D15" pad="16"/>
-<connect gate="G$3" pin="PE16/CSI_D12/LCD_D18" pad="15"/>
-<connect gate="G$3" pin="PE17/CSI_D13/LCD_D19" pad="14"/>
-<connect gate="G$3" pin="PE18/CSI_D14/LCD_D20" pad="13"/>
-<connect gate="G$3" pin="PE19/CSI_D15/LCD_D21" pad="11"/>
-<connect gate="G$3" pin="PE2/CSI_HSYNC/LCD_HSYNC" pad="35"/>
-<connect gate="G$3" pin="PE20/CSI_FIELD/CSI_MIPI_MCLK" pad="10"/>
-<connect gate="G$3" pin="PE21/CSI_SCL/SCL1/TX1" pad="9"/>
-<connect gate="G$3" pin="PE22/CSI_SDA/SDA1/RX1" pad="8"/>
-<connect gate="G$3" pin="PE23/LCD_D22/RTS1" pad="7"/>
-<connect gate="G$3" pin="PE24/LCD_D23/CTS1" pad="6"/>
-<connect gate="G$3" pin="PE3/CSI_VSYNC/LCD_VSYNC" pad="34"/>
-<connect gate="G$3" pin="PE4/CST_D0/LCD_D2" pad="33"/>
-<connect gate="G$3" pin="PE5/CSI_D1/LCD_D3" pad="32"/>
-<connect gate="G$3" pin="PE6/CSI_D2/LCD_D4" pad="31"/>
-<connect gate="G$3" pin="PE7/CSI_D3/LCD_D5" pad="30"/>
-<connect gate="G$3" pin="PE8/CSI_D4/LCD_D6" pad="28"/>
-<connect gate="G$3" pin="PE9/CSI_D5/LCD_D7" pad="27"/>
-<connect gate="G$4" pin="PF0/SD0_D1/TMS" pad="107"/>
-<connect gate="G$4" pin="PF1/SD0_D0/TDI" pad="106"/>
-<connect gate="G$4" pin="PF2/SD0_CLK/TX0" pad="105"/>
-<connect gate="G$4" pin="PF3/SD0_CMD/TDO" pad="103"/>
-<connect gate="G$4" pin="PF4/SD0_D3/RX0" pad="102"/>
-<connect gate="G$4" pin="PF5/SD0_D2/TCK" pad="101"/>
-<connect gate="G$4" pin="PF6" pad="100"/>
-<connect gate="G$4" pin="PG0/SD1_CLK" pad="5"/>
-<connect gate="G$4" pin="PG1/SD1_CMD" pad="4"/>
-<connect gate="G$4" pin="PG2/SD1_D0" pad="3"/>
-<connect gate="G$4" pin="PG3/SD1_D1" pad="2"/>
-<connect gate="G$4" pin="PG4/SD1_D2" pad="1"/>
-<connect gate="G$4" pin="PG5/SD1_D3" pad="128"/>
-<connect gate="G$5" pin="CSI_CLK+" pad="86"/>
-<connect gate="G$5" pin="CSI_CLK-" pad="87"/>
-<connect gate="G$5" pin="CSI_D0+" pad="81"/>
-<connect gate="G$5" pin="CSI_D0-" pad="82"/>
-<connect gate="G$5" pin="CSI_D1+" pad="83"/>
-<connect gate="G$5" pin="CSI_D1-" pad="84"/>
-<connect gate="G$5" pin="ETH_LINK" pad="77"/>
-<connect gate="G$5" pin="ETH_RTX" pad="94"/>
-<connect gate="G$5" pin="ETH_RX+" pad="90"/>
-<connect gate="G$5" pin="ETH_RX-" pad="89"/>
-<connect gate="G$5" pin="ETH_SPEED" pad="78"/>
-<connect gate="G$5" pin="ETH_TX+" pad="92"/>
-<connect gate="G$5" pin="ETH_TX-" pad="91"/>
-<connect gate="G$5" pin="LRADC" pad="112"/>
-<connect gate="G$5" pin="USB_D+" pad="111"/>
-<connect gate="G$5" pin="USB_D-" pad="110"/>
-<connect gate="G$6" pin="AOUTL" pad="121"/>
-<connect gate="G$6" pin="AOUTR" pad="120"/>
-<connect gate="G$6" pin="HBIAS" pad="119"/>
-<connect gate="G$6" pin="HPCOM" pad="125"/>
-<connect gate="G$6" pin="HPCOMFB" pad="124"/>
-<connect gate="G$6" pin="MIC+" pad="113"/>
-<connect gate="G$6" pin="MIC-" pad="114"/>
-<connect gate="G$6" pin="VREF" pad="117 118"/>
+<connect gate="-AUDIO" pin="AOUTL" pad="121"/>
+<connect gate="-AUDIO" pin="AOUTR" pad="120"/>
+<connect gate="-AUDIO" pin="HBIAS" pad="119"/>
+<connect gate="-AUDIO" pin="HPCOM" pad="125"/>
+<connect gate="-AUDIO" pin="HPCOMFB" pad="124"/>
+<connect gate="-AUDIO" pin="MIC+" pad="113"/>
+<connect gate="-AUDIO" pin="MIC-" pad="114"/>
+<connect gate="-AUDIO" pin="VREF" pad="117 118"/>
+<connect gate="-MISC" pin="CSI_CLK+" pad="86"/>
+<connect gate="-MISC" pin="CSI_CLK-" pad="87"/>
+<connect gate="-MISC" pin="CSI_D0+" pad="81"/>
+<connect gate="-MISC" pin="CSI_D0-" pad="82"/>
+<connect gate="-MISC" pin="CSI_D1+" pad="83"/>
+<connect gate="-MISC" pin="CSI_D1-" pad="84"/>
+<connect gate="-MISC" pin="ETH_LINK" pad="77"/>
+<connect gate="-MISC" pin="ETH_RTX" pad="94"/>
+<connect gate="-MISC" pin="ETH_RX+" pad="90"/>
+<connect gate="-MISC" pin="ETH_RX-" pad="89"/>
+<connect gate="-MISC" pin="ETH_SPEED" pad="78"/>
+<connect gate="-MISC" pin="ETH_TX+" pad="92"/>
+<connect gate="-MISC" pin="ETH_TX-" pad="91"/>
+<connect gate="-MISC" pin="LRADC" pad="112"/>
+<connect gate="-MISC" pin="USB_D+" pad="111"/>
+<connect gate="-MISC" pin="USB_D-" pad="110"/>
+<connect gate="-PORTBC" pin="PB0/TX2" pad="39"/>
+<connect gate="-PORTBC" pin="PB1/RX2" pad="40"/>
+<connect gate="-PORTBC" pin="PB2/RTS2" pad="41"/>
+<connect gate="-PORTBC" pin="PB3/CTS2" pad="42"/>
+<connect gate="-PORTBC" pin="PB4/PWM0" pad="43"/>
+<connect gate="-PORTBC" pin="PB5/PWM1" pad="44"/>
+<connect gate="-PORTBC" pin="PB6/SCL0" pad="45"/>
+<connect gate="-PORTBC" pin="PB7/SDA0" pad="46"/>
+<connect gate="-PORTBC" pin="PB8/SCL1/TX0" pad="48"/>
+<connect gate="-PORTBC" pin="PB9/SDA1/RX0" pad="49"/>
+<connect gate="-PORTBC" pin="PC0/SD2_CLK/MISO0" pad="52"/>
+<connect gate="-PORTBC" pin="PC1/SD2_CMD/SCK0" pad="53"/>
+<connect gate="-PORTBC" pin="PC2/SD2_RST/SPICS0" pad="54"/>
+<connect gate="-PORTBC" pin="PC3/SD2_D0/MOSI0" pad="55"/>
+<connect gate="-PORTE" pin="PE0/CSI_PCLK/LCD_CLK" pad="37"/>
+<connect gate="-PORTE" pin="PE1/CSI_MCLK/LCD_ME" pad="36"/>
+<connect gate="-PORTE" pin="PE10/CSI_D6/LCD_D10" pad="24"/>
+<connect gate="-PORTE" pin="PE11/CSI_D7/LCD_D11" pad="23"/>
+<connect gate="-PORTE" pin="PE12/CSI_D8/LCD_D12" pad="22"/>
+<connect gate="-PORTE" pin="PE13/CSI_D9/LCD_D13" pad="18"/>
+<connect gate="-PORTE" pin="PE14/CSI_D10/LCD_D14" pad="17"/>
+<connect gate="-PORTE" pin="PE15/CSI_D11/LCD_D15" pad="16"/>
+<connect gate="-PORTE" pin="PE16/CSI_D12/LCD_D18" pad="15"/>
+<connect gate="-PORTE" pin="PE17/CSI_D13/LCD_D19" pad="14"/>
+<connect gate="-PORTE" pin="PE18/CSI_D14/LCD_D20" pad="13"/>
+<connect gate="-PORTE" pin="PE19/CSI_D15/LCD_D21" pad="11"/>
+<connect gate="-PORTE" pin="PE2/CSI_HSYNC/LCD_HSYNC" pad="35"/>
+<connect gate="-PORTE" pin="PE20/CSI_FIELD/CSI_MIPI_MCLK" pad="10"/>
+<connect gate="-PORTE" pin="PE21/CSI_SCL/SCL1/TX1" pad="9"/>
+<connect gate="-PORTE" pin="PE22/CSI_SDA/SDA1/RX1" pad="8"/>
+<connect gate="-PORTE" pin="PE23/LCD_D22/RTS1" pad="7"/>
+<connect gate="-PORTE" pin="PE24/LCD_D23/CTS1" pad="6"/>
+<connect gate="-PORTE" pin="PE3/CSI_VSYNC/LCD_VSYNC" pad="34"/>
+<connect gate="-PORTE" pin="PE4/CST_D0/LCD_D2" pad="33"/>
+<connect gate="-PORTE" pin="PE5/CSI_D1/LCD_D3" pad="32"/>
+<connect gate="-PORTE" pin="PE6/CSI_D2/LCD_D4" pad="31"/>
+<connect gate="-PORTE" pin="PE7/CSI_D3/LCD_D5" pad="30"/>
+<connect gate="-PORTE" pin="PE8/CSI_D4/LCD_D6" pad="28"/>
+<connect gate="-PORTE" pin="PE9/CSI_D5/LCD_D7" pad="27"/>
+<connect gate="-PORTFG" pin="PF0/SD0_D1/TMS" pad="107"/>
+<connect gate="-PORTFG" pin="PF1/SD0_D0/TDI" pad="106"/>
+<connect gate="-PORTFG" pin="PF2/SD0_CLK/TX0" pad="105"/>
+<connect gate="-PORTFG" pin="PF3/SD0_CMD/TDO" pad="103"/>
+<connect gate="-PORTFG" pin="PF4/SD0_D3/RX0" pad="102"/>
+<connect gate="-PORTFG" pin="PF5/SD0_D2/TCK" pad="101"/>
+<connect gate="-PORTFG" pin="PF6" pad="100"/>
+<connect gate="-PORTFG" pin="PG0/SD1_CLK" pad="5"/>
+<connect gate="-PORTFG" pin="PG1/SD1_CMD" pad="4"/>
+<connect gate="-PORTFG" pin="PG2/SD1_D0" pad="3"/>
+<connect gate="-PORTFG" pin="PG3/SD1_D1" pad="2"/>
+<connect gate="-PORTFG" pin="PG4/SD1_D2" pad="1"/>
+<connect gate="-PORTFG" pin="PG5/SD1_D3" pad="128"/>
+<connect gate="-POWER" pin="!RESET" pad="99"/>
+<connect gate="-POWER" pin="AGND" pad="116"/>
+<connect gate="-POWER" pin="AVCC" pad="115"/>
+<connect gate="-POWER" pin="AVDDP" pad="122"/>
+<connect gate="-POWER" pin="AVDDPO" pad="123"/>
+<connect gate="-POWER" pin="GND" pad="P"/>
+<connect gate="-POWER" pin="RTCI" pad="96"/>
+<connect gate="-POWER" pin="RTCO" pad="95"/>
+<connect gate="-POWER" pin="RTCVIO" pad="97"/>
+<connect gate="-POWER" pin="SVREF" pad="63 71"/>
+<connect gate="-POWER" pin="SZQ" pad="73"/>
+<connect gate="-POWER" pin="VBACKUP" pad="98"/>
+<connect gate="-POWER" pin="VCCETH" pad="93"/>
+<connect gate="-POWER" pin="VCORE" pad="20 21 25 26 38 47 51 56"/>
+<connect gate="-POWER" pin="VDDCSI" pad="85"/>
+<connect gate="-POWER" pin="VDDETH" pad="88"/>
+<connect gate="-POWER" pin="VDDIO" pad="50 57 104 127"/>
+<connect gate="-POWER" pin="VDDIOE" pad="12 29"/>
+<connect gate="-POWER" pin="VDDPLL" pad="76"/>
+<connect gate="-POWER" pin="VDDRAM" pad="59 60 61 62 65 66 67 68 69 70 72 79"/>
+<connect gate="-POWER" pin="VDDSYS" pad="19 58 64 80 108 126"/>
+<connect gate="-POWER" pin="VDDUSB" pad="109"/>
+<connect gate="-POWER" pin="XI" pad="75"/>
+<connect gate="-POWER" pin="XO" pad="74"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1181,106 +1181,106 @@ shrink quad flat pack, square</description>
 </device>
 <device name="" package="ELQFP128">
 <connects>
-<connect gate="G$1" pin="!RESET" pad="99"/>
-<connect gate="G$1" pin="AGND" pad="116"/>
-<connect gate="G$1" pin="AVCC" pad="115"/>
-<connect gate="G$1" pin="AVDDP" pad="122"/>
-<connect gate="G$1" pin="AVDDPO" pad="123"/>
-<connect gate="G$1" pin="GND" pad="P$1 P$2 P$3 P$4 P$5 P$6 P$7 P$8 P$9"/>
-<connect gate="G$1" pin="RTCI" pad="96"/>
-<connect gate="G$1" pin="RTCO" pad="95"/>
-<connect gate="G$1" pin="RTCVIO" pad="97"/>
-<connect gate="G$1" pin="SVREF" pad="63 71"/>
-<connect gate="G$1" pin="SZQ" pad="73"/>
-<connect gate="G$1" pin="VBACKUP" pad="98"/>
-<connect gate="G$1" pin="VCCETH" pad="93"/>
-<connect gate="G$1" pin="VCORE" pad="20 21 25 26 38 47 51 56"/>
-<connect gate="G$1" pin="VDDCSI" pad="85"/>
-<connect gate="G$1" pin="VDDETH" pad="88"/>
-<connect gate="G$1" pin="VDDIO" pad="50 57 104 127"/>
-<connect gate="G$1" pin="VDDIOE" pad="12 29"/>
-<connect gate="G$1" pin="VDDPLL" pad="76"/>
-<connect gate="G$1" pin="VDDRAM" pad="59 60 61 62 65 66 67 68 69 70 72 79"/>
-<connect gate="G$1" pin="VDDSYS" pad="19 58 64 80 108 126"/>
-<connect gate="G$1" pin="VDDUSB" pad="109"/>
-<connect gate="G$1" pin="XI" pad="75"/>
-<connect gate="G$1" pin="XO" pad="74"/>
-<connect gate="G$2" pin="PB0/TX2" pad="39"/>
-<connect gate="G$2" pin="PB1/RX2" pad="40"/>
-<connect gate="G$2" pin="PB2/RTS2" pad="41"/>
-<connect gate="G$2" pin="PB3/CTS2" pad="42"/>
-<connect gate="G$2" pin="PB4/PWM0" pad="43"/>
-<connect gate="G$2" pin="PB5/PWM1" pad="44"/>
-<connect gate="G$2" pin="PB6/SCL0" pad="45"/>
-<connect gate="G$2" pin="PB7/SDA0" pad="46"/>
-<connect gate="G$2" pin="PB8/SCL1/TX0" pad="48"/>
-<connect gate="G$2" pin="PB9/SDA1/RX0" pad="49"/>
-<connect gate="G$2" pin="PC0/SD2_CLK/MISO0" pad="52"/>
-<connect gate="G$2" pin="PC1/SD2_CMD/SCK0" pad="53"/>
-<connect gate="G$2" pin="PC2/SD2_RST/SPICS0" pad="54"/>
-<connect gate="G$2" pin="PC3/SD2_D0/MOSI0" pad="55"/>
-<connect gate="G$3" pin="PE0/CSI_PCLK/LCD_CLK" pad="37"/>
-<connect gate="G$3" pin="PE1/CSI_MCLK/LCD_ME" pad="36"/>
-<connect gate="G$3" pin="PE10/CSI_D6/LCD_D10" pad="24"/>
-<connect gate="G$3" pin="PE11/CSI_D7/LCD_D11" pad="23"/>
-<connect gate="G$3" pin="PE12/CSI_D8/LCD_D12" pad="22"/>
-<connect gate="G$3" pin="PE13/CSI_D9/LCD_D13" pad="18"/>
-<connect gate="G$3" pin="PE14/CSI_D10/LCD_D14" pad="17"/>
-<connect gate="G$3" pin="PE15/CSI_D11/LCD_D15" pad="16"/>
-<connect gate="G$3" pin="PE16/CSI_D12/LCD_D18" pad="15"/>
-<connect gate="G$3" pin="PE17/CSI_D13/LCD_D19" pad="14"/>
-<connect gate="G$3" pin="PE18/CSI_D14/LCD_D20" pad="13"/>
-<connect gate="G$3" pin="PE19/CSI_D15/LCD_D21" pad="11"/>
-<connect gate="G$3" pin="PE2/CSI_HSYNC/LCD_HSYNC" pad="35"/>
-<connect gate="G$3" pin="PE20/CSI_FIELD/CSI_MIPI_MCLK" pad="10"/>
-<connect gate="G$3" pin="PE21/CSI_SCL/SCL1/TX1" pad="9"/>
-<connect gate="G$3" pin="PE22/CSI_SDA/SDA1/RX1" pad="8"/>
-<connect gate="G$3" pin="PE23/LCD_D22/RTS1" pad="7"/>
-<connect gate="G$3" pin="PE24/LCD_D23/CTS1" pad="6"/>
-<connect gate="G$3" pin="PE3/CSI_VSYNC/LCD_VSYNC" pad="34"/>
-<connect gate="G$3" pin="PE4/CST_D0/LCD_D2" pad="33"/>
-<connect gate="G$3" pin="PE5/CSI_D1/LCD_D3" pad="32"/>
-<connect gate="G$3" pin="PE6/CSI_D2/LCD_D4" pad="31"/>
-<connect gate="G$3" pin="PE7/CSI_D3/LCD_D5" pad="30"/>
-<connect gate="G$3" pin="PE8/CSI_D4/LCD_D6" pad="28"/>
-<connect gate="G$3" pin="PE9/CSI_D5/LCD_D7" pad="27"/>
-<connect gate="G$4" pin="PF0/SD0_D1/TMS" pad="107"/>
-<connect gate="G$4" pin="PF1/SD0_D0/TDI" pad="106"/>
-<connect gate="G$4" pin="PF2/SD0_CLK/TX0" pad="105"/>
-<connect gate="G$4" pin="PF3/SD0_CMD/TDO" pad="103"/>
-<connect gate="G$4" pin="PF4/SD0_D3/RX0" pad="102"/>
-<connect gate="G$4" pin="PF5/SD0_D2/TCK" pad="101"/>
-<connect gate="G$4" pin="PF6" pad="100"/>
-<connect gate="G$4" pin="PG0/SD1_CLK" pad="5"/>
-<connect gate="G$4" pin="PG1/SD1_CMD" pad="4"/>
-<connect gate="G$4" pin="PG2/SD1_D0" pad="3"/>
-<connect gate="G$4" pin="PG3/SD1_D1" pad="2"/>
-<connect gate="G$4" pin="PG4/SD1_D2" pad="1"/>
-<connect gate="G$4" pin="PG5/SD1_D3" pad="128"/>
-<connect gate="G$5" pin="CSI_CLK+" pad="86"/>
-<connect gate="G$5" pin="CSI_CLK-" pad="87"/>
-<connect gate="G$5" pin="CSI_D0+" pad="81"/>
-<connect gate="G$5" pin="CSI_D0-" pad="82"/>
-<connect gate="G$5" pin="CSI_D1+" pad="83"/>
-<connect gate="G$5" pin="CSI_D1-" pad="84"/>
-<connect gate="G$5" pin="ETH_LINK" pad="77"/>
-<connect gate="G$5" pin="ETH_RTX" pad="94"/>
-<connect gate="G$5" pin="ETH_RX+" pad="90"/>
-<connect gate="G$5" pin="ETH_RX-" pad="89"/>
-<connect gate="G$5" pin="ETH_SPEED" pad="78"/>
-<connect gate="G$5" pin="ETH_TX+" pad="92"/>
-<connect gate="G$5" pin="ETH_TX-" pad="91"/>
-<connect gate="G$5" pin="LRADC" pad="112"/>
-<connect gate="G$5" pin="USB_D+" pad="111"/>
-<connect gate="G$5" pin="USB_D-" pad="110"/>
-<connect gate="G$6" pin="AOUTL" pad="121"/>
-<connect gate="G$6" pin="AOUTR" pad="120"/>
-<connect gate="G$6" pin="HBIAS" pad="119"/>
-<connect gate="G$6" pin="HPCOM" pad="125"/>
-<connect gate="G$6" pin="HPCOMFB" pad="124"/>
-<connect gate="G$6" pin="MIC+" pad="113"/>
-<connect gate="G$6" pin="MIC-" pad="114"/>
-<connect gate="G$6" pin="VREF" pad="117 118"/>
+<connect gate="-AUDIO" pin="AOUTL" pad="121"/>
+<connect gate="-AUDIO" pin="AOUTR" pad="120"/>
+<connect gate="-AUDIO" pin="HBIAS" pad="119"/>
+<connect gate="-AUDIO" pin="HPCOM" pad="125"/>
+<connect gate="-AUDIO" pin="HPCOMFB" pad="124"/>
+<connect gate="-AUDIO" pin="MIC+" pad="113"/>
+<connect gate="-AUDIO" pin="MIC-" pad="114"/>
+<connect gate="-AUDIO" pin="VREF" pad="117 118"/>
+<connect gate="-MISC" pin="CSI_CLK+" pad="86"/>
+<connect gate="-MISC" pin="CSI_CLK-" pad="87"/>
+<connect gate="-MISC" pin="CSI_D0+" pad="81"/>
+<connect gate="-MISC" pin="CSI_D0-" pad="82"/>
+<connect gate="-MISC" pin="CSI_D1+" pad="83"/>
+<connect gate="-MISC" pin="CSI_D1-" pad="84"/>
+<connect gate="-MISC" pin="ETH_LINK" pad="77"/>
+<connect gate="-MISC" pin="ETH_RTX" pad="94"/>
+<connect gate="-MISC" pin="ETH_RX+" pad="90"/>
+<connect gate="-MISC" pin="ETH_RX-" pad="89"/>
+<connect gate="-MISC" pin="ETH_SPEED" pad="78"/>
+<connect gate="-MISC" pin="ETH_TX+" pad="92"/>
+<connect gate="-MISC" pin="ETH_TX-" pad="91"/>
+<connect gate="-MISC" pin="LRADC" pad="112"/>
+<connect gate="-MISC" pin="USB_D+" pad="111"/>
+<connect gate="-MISC" pin="USB_D-" pad="110"/>
+<connect gate="-PORTBC" pin="PB0/TX2" pad="39"/>
+<connect gate="-PORTBC" pin="PB1/RX2" pad="40"/>
+<connect gate="-PORTBC" pin="PB2/RTS2" pad="41"/>
+<connect gate="-PORTBC" pin="PB3/CTS2" pad="42"/>
+<connect gate="-PORTBC" pin="PB4/PWM0" pad="43"/>
+<connect gate="-PORTBC" pin="PB5/PWM1" pad="44"/>
+<connect gate="-PORTBC" pin="PB6/SCL0" pad="45"/>
+<connect gate="-PORTBC" pin="PB7/SDA0" pad="46"/>
+<connect gate="-PORTBC" pin="PB8/SCL1/TX0" pad="48"/>
+<connect gate="-PORTBC" pin="PB9/SDA1/RX0" pad="49"/>
+<connect gate="-PORTBC" pin="PC0/SD2_CLK/MISO0" pad="52"/>
+<connect gate="-PORTBC" pin="PC1/SD2_CMD/SCK0" pad="53"/>
+<connect gate="-PORTBC" pin="PC2/SD2_RST/SPICS0" pad="54"/>
+<connect gate="-PORTBC" pin="PC3/SD2_D0/MOSI0" pad="55"/>
+<connect gate="-PORTE" pin="PE0/CSI_PCLK/LCD_CLK" pad="37"/>
+<connect gate="-PORTE" pin="PE1/CSI_MCLK/LCD_ME" pad="36"/>
+<connect gate="-PORTE" pin="PE10/CSI_D6/LCD_D10" pad="24"/>
+<connect gate="-PORTE" pin="PE11/CSI_D7/LCD_D11" pad="23"/>
+<connect gate="-PORTE" pin="PE12/CSI_D8/LCD_D12" pad="22"/>
+<connect gate="-PORTE" pin="PE13/CSI_D9/LCD_D13" pad="18"/>
+<connect gate="-PORTE" pin="PE14/CSI_D10/LCD_D14" pad="17"/>
+<connect gate="-PORTE" pin="PE15/CSI_D11/LCD_D15" pad="16"/>
+<connect gate="-PORTE" pin="PE16/CSI_D12/LCD_D18" pad="15"/>
+<connect gate="-PORTE" pin="PE17/CSI_D13/LCD_D19" pad="14"/>
+<connect gate="-PORTE" pin="PE18/CSI_D14/LCD_D20" pad="13"/>
+<connect gate="-PORTE" pin="PE19/CSI_D15/LCD_D21" pad="11"/>
+<connect gate="-PORTE" pin="PE2/CSI_HSYNC/LCD_HSYNC" pad="35"/>
+<connect gate="-PORTE" pin="PE20/CSI_FIELD/CSI_MIPI_MCLK" pad="10"/>
+<connect gate="-PORTE" pin="PE21/CSI_SCL/SCL1/TX1" pad="9"/>
+<connect gate="-PORTE" pin="PE22/CSI_SDA/SDA1/RX1" pad="8"/>
+<connect gate="-PORTE" pin="PE23/LCD_D22/RTS1" pad="7"/>
+<connect gate="-PORTE" pin="PE24/LCD_D23/CTS1" pad="6"/>
+<connect gate="-PORTE" pin="PE3/CSI_VSYNC/LCD_VSYNC" pad="34"/>
+<connect gate="-PORTE" pin="PE4/CST_D0/LCD_D2" pad="33"/>
+<connect gate="-PORTE" pin="PE5/CSI_D1/LCD_D3" pad="32"/>
+<connect gate="-PORTE" pin="PE6/CSI_D2/LCD_D4" pad="31"/>
+<connect gate="-PORTE" pin="PE7/CSI_D3/LCD_D5" pad="30"/>
+<connect gate="-PORTE" pin="PE8/CSI_D4/LCD_D6" pad="28"/>
+<connect gate="-PORTE" pin="PE9/CSI_D5/LCD_D7" pad="27"/>
+<connect gate="-PORTFG" pin="PF0/SD0_D1/TMS" pad="107"/>
+<connect gate="-PORTFG" pin="PF1/SD0_D0/TDI" pad="106"/>
+<connect gate="-PORTFG" pin="PF2/SD0_CLK/TX0" pad="105"/>
+<connect gate="-PORTFG" pin="PF3/SD0_CMD/TDO" pad="103"/>
+<connect gate="-PORTFG" pin="PF4/SD0_D3/RX0" pad="102"/>
+<connect gate="-PORTFG" pin="PF5/SD0_D2/TCK" pad="101"/>
+<connect gate="-PORTFG" pin="PF6" pad="100"/>
+<connect gate="-PORTFG" pin="PG0/SD1_CLK" pad="5"/>
+<connect gate="-PORTFG" pin="PG1/SD1_CMD" pad="4"/>
+<connect gate="-PORTFG" pin="PG2/SD1_D0" pad="3"/>
+<connect gate="-PORTFG" pin="PG3/SD1_D1" pad="2"/>
+<connect gate="-PORTFG" pin="PG4/SD1_D2" pad="1"/>
+<connect gate="-PORTFG" pin="PG5/SD1_D3" pad="128"/>
+<connect gate="-POWER" pin="!RESET" pad="99"/>
+<connect gate="-POWER" pin="AGND" pad="116"/>
+<connect gate="-POWER" pin="AVCC" pad="115"/>
+<connect gate="-POWER" pin="AVDDP" pad="122"/>
+<connect gate="-POWER" pin="AVDDPO" pad="123"/>
+<connect gate="-POWER" pin="GND" pad="P$1 P$2 P$3 P$4 P$5 P$6 P$7 P$8 P$9"/>
+<connect gate="-POWER" pin="RTCI" pad="96"/>
+<connect gate="-POWER" pin="RTCO" pad="95"/>
+<connect gate="-POWER" pin="RTCVIO" pad="97"/>
+<connect gate="-POWER" pin="SVREF" pad="63 71"/>
+<connect gate="-POWER" pin="SZQ" pad="73"/>
+<connect gate="-POWER" pin="VBACKUP" pad="98"/>
+<connect gate="-POWER" pin="VCCETH" pad="93"/>
+<connect gate="-POWER" pin="VCORE" pad="20 21 25 26 38 47 51 56"/>
+<connect gate="-POWER" pin="VDDCSI" pad="85"/>
+<connect gate="-POWER" pin="VDDETH" pad="88"/>
+<connect gate="-POWER" pin="VDDIO" pad="50 57 104 127"/>
+<connect gate="-POWER" pin="VDDIOE" pad="12 29"/>
+<connect gate="-POWER" pin="VDDPLL" pad="76"/>
+<connect gate="-POWER" pin="VDDRAM" pad="59 60 61 62 65 66 67 68 69 70 72 79"/>
+<connect gate="-POWER" pin="VDDSYS" pad="19 58 64 80 108 126"/>
+<connect gate="-POWER" pin="VDDUSB" pad="109"/>
+<connect gate="-POWER" pin="XI" pad="75"/>
+<connect gate="-POWER" pin="XO" pad="74"/>
 </connects>
 <technologies>
 <technology name=""/>
