@@ -9183,12 +9183,17 @@ package type OT</description>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
+<part name="FRAME2" library="frames" deviceset="A4L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="217.17" y="20.32" size="2.54" layer="94">System Power</text>
+<text x="5.08" y="5.08" size="2.54" layer="94">Copyright (c) 2017 Max Chan &lt;xcvista@me.com&gt;
+Open Source Hardware under the 3-clause BSD License</text>
 </plain>
 <instances>
+<instance part="FRAME2" gate="G$1" x="0" y="0"/>
 </instances>
 <busses>
 </busses>
